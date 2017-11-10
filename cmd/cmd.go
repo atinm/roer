@@ -12,9 +12,8 @@ import (
 
 // NewRoer returns a new instance of the OSS roer application
 func NewRoer(version string, clientConfig spinnaker.ClientConfig) *cli.App {
-	cli.VersionFlag.Name = "version"
-	cli.HelpFlag.Name = "help"
-	cli.HelpFlag.Hidden = true
+	cli.VersionFlag = cli.BoolFlag{Name: "version"}
+	cli.HelpFlag = cli.BoolFlag{ Name: "help", Hidden: true}
 
 	app := cli.NewApp()
 	app.Name = "roer"
