@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/spinnaker/roer/cmd"
+	"github.com/atinm/roer/cmd"
 	"github.com/spinnaker/roer/spinnaker"
 )
 
